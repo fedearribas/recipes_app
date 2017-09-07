@@ -1,3 +1,4 @@
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { HeaderComponent } from './header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
@@ -32,6 +33,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     HttpModule
   ],
   providers: [
+    ShoppingListService
   ],
   bootstrap: [AppComponent]
 })
