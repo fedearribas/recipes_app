@@ -31,7 +31,8 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
