@@ -1,11 +1,11 @@
 import { ShoppingListService } from './../shopping-list/shopping-list.service';
 import { Ingredient } from './../shared/ingredient.model';
-import { EventEmitter, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Recipe } from './recipe.model';
 
 @Injectable()
 export class RecipeService {
-  recipeSelected = new EventEmitter<Recipe>();
+
   private recipes: Recipe[] = [
     new Recipe('Milanesa con dubstep', 'Deliciosa milanesa con un poco de dubstep',
     'http://vignette2.wikia.nocookie.net/july3p/images/d/dc/Milanesa_Dubstep.jpg/revision/latest?cb=20170310092035&path-prefix=es',
@@ -33,5 +33,9 @@ export class RecipeService {
 
     addIngredientsToShoppingList(ingredients: Ingredient[]) {
       this.shoppingListService.addIngredients(ingredients);
+    }
+
+    getRecipe(id: number) {
+      return this.recipes[id];
     }
 }
