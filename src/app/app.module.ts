@@ -1,3 +1,4 @@
+import { RecipeService } from './recipes/recipe.service';
 import { RecipeNotSelectedComponent } from './recipes/recipe-not-selected/recipe-not-selected.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
@@ -41,7 +42,8 @@ import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.compon
     AppRoutingModule
   ],
   providers: [
-    ShoppingListService
+    ShoppingListService,
+    RecipeService
   ],
   bootstrap: [AppComponent]
 })
