@@ -73,7 +73,7 @@ export class RecipesEditComponent implements OnInit {
   onCancel() {
     this.editMode = false;
     this.recipeForm.reset();
-    this.router.navigate(['']);
+    this.router.navigate(['/recipes']);
 
   }
 
