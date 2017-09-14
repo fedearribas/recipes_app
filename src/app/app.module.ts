@@ -1,3 +1,4 @@
+import { DataStorageService } from './shared/data-storage.service';
 import { RecipeService } from './recipes/recipe.service';
 import { RecipeNotSelectedComponent } from './recipes/recipe-not-selected/recipe-not-selected.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -43,7 +44,8 @@ import { RecipesEditComponent } from './recipes/recipes-edit/recipes-edit.compon
   ],
   providers: [
     ShoppingListService,
-    RecipeService
+    RecipeService,
+    DataStorageService
   ],
   bootstrap: [AppComponent]
 })
