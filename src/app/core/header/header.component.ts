@@ -28,4 +28,8 @@ export class HeaderComponent {
   onLogout() {
     this.authService.logout();
   }
+
+  getAuthService() {
+    return this.authService;
+  }
 }
