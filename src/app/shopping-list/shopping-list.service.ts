@@ -10,7 +10,6 @@ export class ShoppingListService {
   ingredientsChanged = new Subject<Ingredient[]>();
   startedEditing = new Subject<number>();
 
- 
   getIngredient(id: number) {
     return this.ingredients[id];
   }
