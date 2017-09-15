@@ -10,17 +10,9 @@ export class ShoppingListService {
   ingredientsChanged = new Subject<Ingredient[]>();
   startedEditing = new Subject<number>();
 
-  getIngredients() {
-    return this.ingredients.slice();
-  }
-
+ 
   getIngredient(id: number) {
     return this.ingredients[id];
-  }
-
-  addIngredient(ingredient: Ingredient) {
-    this.ingredients.push(ingredient);
-    this.ingredientsChanged.next(this.ingredients.slice());
   }
 
   addIngredients(ingredients: Ingredient[]) {
